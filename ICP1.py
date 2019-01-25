@@ -1,5 +1,5 @@
 x = input("Enter a 3 digit number")
-print(x[::])
+print(x[::-1])
 
 x = input("enter number")
 y = input("enter number")

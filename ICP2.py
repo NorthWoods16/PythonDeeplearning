@@ -1,10 +1,13 @@
-for integer in range(100, 500):
-    intStr = str(integer)[0]
-    if int(intStr) % 2 == 1:
-        intStr = str(integer)[1]
-        if int(intStr) % 2 == 1:
-            intStr = str(integer)[2]
+start = input("Enter starting number\n")
+end = input("Enter ending number\n")
+for integer in range(int(start), int(end)):
+    for idx in range(0, len(str(integer))):
+        intStr = str(integer)[idx]
+        if int(str(integer)[idx]) % 2 == 0:
+            break
+        elif idx == int(len(str(integer)) - 1):
             print(integer)
+
 
 myList = ["1", "4", "0", "6", "9"]
 myList.sort()
